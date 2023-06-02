@@ -1,0 +1,153 @@
+<!DOCTYPE HTML>
+<!--
+	Massively by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Home Appliance Rental</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<a href="index.html" class="logo">About me</a>
+					</header>
+
+				<!-- Nav -->
+					<nav id="nav">
+						<ul class="links">
+							<li><a href="index.html">About Me</a></li>
+							<li class="active"><a href="RegistrationForm.html">Documentation</a></li>
+						</ul>
+						<ul class="icons">
+							<li><a href="#" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+							<li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Post -->
+							<section class="post">
+								<header class="major">
+									<h1>Windows form application<br />
+									with Relational database</h1>
+									<p>This is a personal project of mine to develop a simple offline windows form application.<br />
+									In this project, C# and microsoft sql are mainly used.<br />
+									A showcase of database queries and OOP skills.
+									</p>
+								</header>
+								<div class="image main"><img style="border-radius: 20px;" src="images/homeappliancebg.png" alt="img" /></div>
+								<p></p>
+								<p></p>
+							</section>
+
+							<section class="post">
+								<header class="major">
+									<h1>Project Overview</h1>
+									<p>It is a simple database windows application.</p>
+								</header>
+								<header class="major">
+									<h3>Login form<br />
+									The first form to appear when the application is running.</h3>
+									<p>There are two user types which can be choosen to login<br />
+									Different user types have different authority on using the application.<br />
+									</p>
+								</header>
+								<div class="image main"><img style="border-radius: 20px;" src="images/login.png" alt="img" /></div>
+								<code>By the way,the Admin account is 'Admin' and password is 'Admin123'.</code> 
+                                <p>
+                                There are validation and exception implemented in this form in which you can check in the git repository.<br>
+                                If the user has failed to login for a certain attempts, the user have to wait a certain amount of time. 
+                                </p>
+                                <p>Whenever a new form is instantiated from login form, the login form class will be hidden. When the instantiated classes are closed, original login form object must be shown again. Instead of instantiating new login classes, it is more practical to reuse initial login instance. </p>
+							</section>
+
+							<section class="post">
+								<header class="major">
+									<h3>Registration process</h3>
+									<p>To use the application in customer position, an account is required. <br>
+									There are also restrictions and validation processes.<br />
+									</p>
+								</header>
+								<div class="image main"><img style="border-radius: 20px;" src="images/register.png" alt="img" /></div>
+                                <p>The user name must only include letters and numbers. No special characters are allowed. <br>
+                                Password must be between 8 to 16 characters.<br />
+                                Passowrd must include at least one uppercase or lowercase character. <br>
+                                Of course, password and confirm password must match.
+                                </p>
+							</section>
+
+							<section class="post">
+								<header class="major">
+									<h3>Admin Form</h3>
+									<p>Admin has the authority to create, read, modify and delete appliance data from the database.<br />
+                                        Double click on a record and respected data will be filled in each text box. And then, the admin can modify the information.
+									</p>
+								</header>
+								<div class="image main"><img style="border-radius: 20px;" src="images/Admin.png" alt="img" /></div>
+								<p>There are validations for checking if the admin input the wrong data types in certain fields.</p>
+							</section>
+
+							<section class="post">
+								<header class="major">
+									<h3>Customer Form</h3>
+									<p>Basically, the customer can view the applicances. 
+									</p>
+								</header>
+								<div class="image main"><img style="border-radius: 20px;" src="images/customer.png" alt="img" /></div>
+							</section>
+							
+							<section class="post">
+								<div class="image main"><img style="border-radius: 20px;" src="images/customercart.png" alt="img" /></div>
+								<p>If the users want to rend some appliance(s), they can select the applicance and choose the rental period to rend and click add to cart.<br>
+                                The choosen rental period must be greater than minimum rental period.<br>
+                                The item count in the cart and the total expense will be shown.
+                                </p> 
+							</section>
+                            
+							<section class="post">
+                                <p>This is the class diagram of the application.</p>
+								<div class="image main"><img style="border-radius: 20px;" src="images/classDiagram.png" alt="img" /></div>
+								<p>Variable names are referenced from the code.
+                                </p> 
+							</section>
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<ul class="actions special">
+							<li><a href="https://github.com/ThuLinShan/HomeApplianceRental.git" class="button">Check out the code</a></li>
+						</ul>
+					</footer>
+
+				<!-- Copyright -->
+					<div id="copyright">
+						<ul><li>&copy; personalized by thulinshan</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul><br>
+
+						<p style="text-align: center;">images used in this portfolio are from copytright free sources.</p>
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
